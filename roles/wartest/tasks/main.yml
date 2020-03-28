@@ -4,11 +4,9 @@
     name: https://centos7.iuscommunity.org/ius-release.rpm
     state: present
     
-- name: update
+- name: do update
   become: yes
-  yum:
-    name: update
-    state: present
+  shell: yum update
 
 - name: install pip et python
   become: yes
