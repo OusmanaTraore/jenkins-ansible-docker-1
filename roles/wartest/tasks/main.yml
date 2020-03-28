@@ -1,11 +1,8 @@
-- name: install pip
-  yum:
-    name: python-pip
-    state: present
-    
-- name: pip install upgrade pip
+- name: install pip et python
   become: yes
-  shell: pip install --upgrade pip
+  yum: 
+    name: python36u python36u-libs python36u-devel python36u-pip
+    state: present
     
 - name: pip install docker-py
   pip:
