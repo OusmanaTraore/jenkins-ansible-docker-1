@@ -2,7 +2,12 @@
   yum:
     name: python-pip
     state: present
-
+    
+- name: pip install upgrade pip
+  pip:
+    name: 
+      - --upgrade pip
+    
 - name: pip install docker-py
   pip:
     name:
