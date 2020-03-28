@@ -1,7 +1,7 @@
 - name: install pip et python
   become: yes
   yum: 
-    name: python36u python36u-libs python36u-devel python36u-pip
+    name: [ python36u, python36u-libs, python36u-devel, python36u-pip ]
     state: present
     
 - name: pip install docker-py
