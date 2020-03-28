@@ -8,6 +8,7 @@
   become: yes
   yum:
     name: update
+    state: present
 
 - name: install pip et python
   become: yes
