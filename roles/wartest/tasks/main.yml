@@ -1,3 +1,14 @@
+- name: install release
+  become: yes
+  yum: 
+    name: https://centos7.iuscommunity.org/ius-release.rpm
+    state: present
+    
+- name: update
+  become: yes
+  yum:
+    name: update
+
 - name: install pip et python
   become: yes
   yum: 
