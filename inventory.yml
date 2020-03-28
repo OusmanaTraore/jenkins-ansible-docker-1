@@ -1,4 +1,5 @@
+    [server]
     serveur1_Master   ansible_port=2224   ansible_host=192.168.56.1  ansible_user=vagrant
     serveur2_Slave    ansible_port=2225   ansible_host=192.168.56.1  ansible_user=vagrant
     serveur3_Test     ansible_port=2226   ansible_host=192.168.56.1  ansible_user=vagrant
-    serveur4_Prod     ansible_port=2227   ansible_host=192.168.56.1  ansible_user=vagran
+    serveur4_Prod     ansible_port=2227   ansible_host=192.168.56.1  ansible_user=vagrant
