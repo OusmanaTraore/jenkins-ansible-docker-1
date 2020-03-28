@@ -1,6 +1,6 @@
 
 - name: install wartest
-  hosts: all
+  hosts: server
   become: yes
   roles:
     - wartest
